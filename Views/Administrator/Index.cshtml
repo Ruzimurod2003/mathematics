@@ -1,0 +1,30 @@
+﻿@model AdministratorIndexViewModel
+<table class="table table-bordered table-striped table-sm">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Birth</th>
+            <th>Login</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>O'zgartirish</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach( var item in Model.Persons)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Birth</td>
+                <td>@item.Login</td>
+                <td>@item.Password</td>
+                <td>@item.Role</td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
